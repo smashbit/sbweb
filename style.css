@@ -1,0 +1,138 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #f2f0ed url(images/bg.jpg);
+	font-family: 'Noto Serif', serif; 
+	font-size: 24px; line-height: 48px; text-align: center;
+	color: #3b3b3b;
+}
+
+#container {
+	width: 80%;
+	margin: 50px auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+img#logo {
+	display: block; margin: 0 auto 50px auto;
+}
+
+h1 {
+	font-size: 40px; font-weight: normal; margin: 0 0 40px 0;
+}
+
+h1 span {
+	font-size: 24px;
+}
+
+h2 {
+	font-weight: normal; clear: both;
+}
+
+p {
+	margin: 0 auto 2% auto;
+}
+
+a {
+	color: #e94b88;
+	text-decoration: none;	
+}
+	a:hover {
+		color: #fb75a9;
+	}
+
+ul#portfolio {
+	width: 100%; margin: 0 auto 50px auto; 
+	list-style: none; overflow: hidden;
+	text-align: center;
+}
+	ul#portfolio li {
+		margin: 20px;
+		display:inline-block;
+
+	}
+		ul#portfolio a {
+			display: block;
+			/*display: block; width: 200px; height: 150px;
+			border:5px solid #ffffff;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+		}
+		ul#portfolio img {
+			border:5px solid #fff;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+		}
+			ul#portfolio img:hover {
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+				-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); 
+		}	
+
+label {
+	float: left; margin: 0 15px 30px 0;
+}
+	label[for=email] {
+		margin: 0 15px 0 20px;
+	}
+	label[for=message] {
+		display: none;
+	}
+
+input {
+	width: 274px; height: 44px; padding: 3px 15px 0 10px;
+	float: left;
+	background: #f9f9f9; border: 1px solid #dedede;
+	box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1); 
+	-moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	font: 20px "Droid Serif", Georgia, Serif; color: #7d7d7d;
+}
+
+textarea {
+	width: 788px; height: 210px; padding: 15px; margin: 0 0 20px 0;
+	background: #f9f9f9; border: 1px solid #dedede;
+	box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1); 
+	-moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	font: 20px "Droid Serif", Georgia, Serif; color: #7d7d7d;
+}
+
+input:focus, textarea:focus {
+	background: #fff; border: 1px solid #c6c6c6;
+}
+
+input#submit {
+	width: 136px; height: 57px; float: right; clear: both; cursor: pointer;
+	background: #585858 url(images/btn-bg.png); border: none;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+	font-size: 30px; color: #f9f9f9; 
+	text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+	-moz-text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+	-webkit-text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* responsive shit */
+@media only screen and (max-width: 760px) {
+	#container {
+		width:100%;
+	}
+	p {
+		margin-bottom: 10%;
+	}
+}
+@media only screen and (min-width: 35em) {
+      p {
+      	width:80%;
+      }
+}
+
